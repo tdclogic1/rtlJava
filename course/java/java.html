@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +8,36 @@
     <style>
         /* Add CSS styles here */
     </style>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.100.0.min.js"></script>
     <script>
+
+
+
+
+
         // JavaScript functions for the task list will go here
+        function addTask() {
+            var taskText = document.getElementById('newTask').value;
+            if (taskText) {
+                var li = document.createElement("li");
+                li.textContent = taskText;
+                document.getElementById('taskList').appendChild(li);
+                document.getElementById('newTask').value = '';
+
+                // Call the Lambda function to save the task in DynamoDB
+                var params = {
+                    FunctionName: 'YOUR_LAMBDA_FUNCTION_NAME',
+                    Payload: JSON.stringify({ task: taskText })
+                };
+                lambda.invoke(params, function(err, data) {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        console.log(data);
+                    }
+                });
+            }
+        }
     </script>
 </head>
 <body>
@@ -32,16 +61,5 @@
         <input type="text" id="newTask" placeholder="Enter a new task">
         <button onclick="addTask()">Add Task</button>
     </section>
-    <script>
-        function addTask() {
-            var taskText = document.getElementById('newTask').value;
-            if (taskText) {
-                var li = document.createElement("li");
-                li.textContent = taskText;
-                document.getElementById('taskList').appendChild(li);
-                document.getElementById('newTask').value = '';
-            }
-        }
-    </script>
 </body>
 </html>
