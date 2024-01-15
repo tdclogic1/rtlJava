@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP CSA Java Course</title>
+    <style>
+        /* Add CSS styles here */
+    </style>
+    <script>
+        // JavaScript functions for the task list will go here
+    </script>
+</head>
+<body>
+    <header>
+        <h1>AP Computer Science A - Java Course</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction to Java</a></li>
+            <li><a href="#control-structures">Control Structures</a></li>
+            <li><a href="#data-structures">Data Structures</a></li>
+            <li><a href="#oop">Object-Oriented Programming</a></li>
+            <li><a href="#exam-prep">AP Exam Preparation</a></li>
+        </ul>
+    </nav>
+    <section id="tasks">
+        <h2>Task List</h2>
+        <ul id="taskList">
+            <!-- Task items will be added here -->
+        </ul>
+        <input type="text" id="newTask" placeholder="Enter a new task">
+        <button onclick="addTask()">Add Task</button>
+    </section>
+    <script>
+        function addTask() {
+            var taskText = document.getElementById('newTask').value;
+            if (taskText) {
+                var li = document.createElement("li");
+                li.textContent = taskText;
+                document.getElementById('taskList').appendChild(li);
+                document.getElementById('newTask').value = '';
+            }
+        }
+    </script>
+</body>
+</html>
