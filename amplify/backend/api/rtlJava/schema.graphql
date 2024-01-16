@@ -1,0 +1,58 @@
+type Program @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  programtype: String
+  description: String
+  ProgramDetais: [ProgramDetai] @hasMany(indexName: "byProgram", fields: ["id"])
+}
+
+type ProgramDetai @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  start_date: AWSDate
+  end_date: AWSDate
+  location: String
+  teacherid: String
+  programID: ID! @index(name: "byProgram")
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String
+  fullname: String
+  email: String
+  Tasks: [Task] @hasMany(indexName: "byUser", fields: ["id"])
+}
+
+type TagUserMap @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  tagid: String
+  childtagid: String
+  TagTypeid: ID
+}
+
+type Account @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  accounttype: String
+}
+
+type Tag @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  type: String
+}
+
+type Task @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  description: String
+  dueDate: AWSDate
+  edate: AWSTimestamp
+  username: String
+  userID: ID! @index(name: "byUser")
+}
+
+type TagType @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+}

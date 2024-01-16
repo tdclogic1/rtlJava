@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>AI Product X</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+	<script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+	<script>
+        // Initizlize a new Markdown converter
+        var converter = new showdown.Converter();
+        // Function to handle the form submission and API call
+        async function handleAPICall(event) {
+            event.preventDefault();
+            const userInput = document.getElementById('userInput').value;
+			const additionalsettings = "";
+			//const langSelect = document.getElementById('language').value;
+
+            // Define the API endpoint and request headers
+            const endpoint = 'https://nsnh9diooe.execute-api.us-east-1.amazonaws.com/Prod/ai/query/rag';
+            const headers = {
+                'Content-Type': 'application/json',
+            };
+
+            // Construct the POST data
+            const postData = {
+                system: "researchassistant",
+                user: "student",
+				lang: additionalsettings,
+                request: userInput
+            };
+
+            try {
+                // Make the API call using Fetch API
+                const response = await fetch(endpoint, {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify(postData)
+                });
+
+             // Check if response is ok
+             if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+
+            const responseData = await response.json();
+
+			// Check if responseData and responseData.content exist
+			if (responseData) {
+				document.getElementById('result').innerHTML = `<pre>${responseData}</pre>`;
+			} else {
+				document.getElementById('result').textContent = 'No content available in the response.';
+			}
+			} catch (error) {
+			console.error('There was a problem with the API call:', error);
+			document.getElementById('result').textContent = 'Error occurred while calling the API.';
+			}
+			};
+    </script>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header 
+
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Request</strong> by Product X</a>
+									<ul class="icons">
+                                        <li><a href="#"  class="icon solid fa-paper-plane"><span class="label">By Provider</span></a></li>
+                                        <li><a href="#"  class="icon solid fa-rocket"><span class="label">By Topic</span></a></li>
+                                        <li><a href="#"  class="icon solid fa-signal"><span class="label">By Individual</span></a></li>
+									</ul>
+								</header>
+								-->
+
+								<button><a class="btn btn-primary btn-lg" href="index.html" role="button">Back to Planning</a></button>
+									<!-- Form to take user input -->
+								<!--div>
+									<select id="language">
+										<option value="English">English</option>
+										<option value="Spanish">Spanish</option>
+										<option value="French">French</option>
+										<option value="Japanese">Japanese</option>
+										<option value="Chinese">Chinese</option>
+										<option value="Russian">Russian</option>
+									</select>
+								</div-->
+								
+								<div>
+									<form onsubmit="handleAPICall(event)">
+										<label for="userInput">Describe the business information you want.</label>
+										<input type="text" id="userInput" required>
+										<button type="submit">Generate an Idea</button>
+									</form>
+								</div>
+									<!-- Display area for the result -->
+									<div id="content" style="width:100%">
+									<pre id="result"></pre>
+								</div>
+									
+				
+								<!-- Banner -->
+								<section id="promptoutput">
+									<div class="d-flex flex-column" style="height: 80%;">
+
+										<div class="p-2">
+
+											<p>When choosing a business name, you should consider the following factors:</p>
+											<ul>
+											<li>Create a list of keywords to define your buiness.</li>
+											<li>Is it easy to pronounce and spell?</li>
+											<li>Is it memorable?</li>
+											<li>Is it relevant to your industry?</li>
+											<li>Optional for this. Is it available as a domain name and social media handle?</li>
+											</ul>
+                                        </div>
+										<div>
+										<h3>Mission Statement</h3>
+											
+											<p>Your mission statement is a brief statement that describes your company's purpose and values. It should be inspiring, motivating, and easy to understand. When writing your mission statement, you should consider the following factors:</p>
+											<ul>
+											<li>What is your company's purpose?</li>
+											<li>What values does your company hold?</li>
+											<li>What do you want your company to achieve?</li>
+										</div>
+                                    </div>
+								</section>
+							<!-- Section -->
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<img src="/assets/img/sybots_dark.png" alt="Logo" style="width:200px;height:200px;">
+
+							<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Navigation</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Homepage</a></li>
+								</ul>
+							</nav>
+						<!-- Section -->
+						<section>
+							<header class="major">
+								<h2>Recent Requests</h2>
+							</header>
+							<div class="mini-posts">
+								<p>1
+									<A HREF="prompt_img.html">Image Creation</A>
+								</p>
+								<p>2
+									<A HREF="prompt_q.html">Ideation</A>
+								</p>
+								<p>3
+									<A HREF="prompt_translate.html">Translate</A>
+								</p>
+								<p>4
+									<A HREF="prompt_kbtest.html">Assessment</A>
+								</p>
+								<p>5
+									<A HREF="prompt_codecheck.html">Code Check</A>
+								</p>
+								<p>6
+									<A HREF="prompt_codecheckv2.html">Code Check w/editor</A>
+								</p>
+								</div>
+						</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>For private implementations of our knowledge base please contact us. You can embed Organization info into our AI based tool to customize it to your organizations needs.</p>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. AI ProductX, inc.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>

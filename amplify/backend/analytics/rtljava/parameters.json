@@ -1,0 +1,21 @@
+{
+    "appName": "rtljava",
+    "roleName": "pinpointLambdaRoled3090926",
+    "cloudformationPolicyName": "cloudformationPolicyd3090926",
+    "cloudWatchPolicyName": "cloudWatchPolicyd3090926",
+    "pinpointPolicyName": "pinpointPolicyd3090926",
+    "authPolicyName": "pinpoint_amplify_d3090926",
+    "unauthPolicyName": "pinpoint_amplify_d3090926",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

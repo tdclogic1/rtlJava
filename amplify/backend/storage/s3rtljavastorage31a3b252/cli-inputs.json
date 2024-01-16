@@ -1,0 +1,11 @@
+{
+  "resourceName": "s3rtljavastorage31a3b252",
+  "bucketName": "rtljava-storage-31a3b252",
+  "policyUUID": "1732e0e8",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ]
+}
