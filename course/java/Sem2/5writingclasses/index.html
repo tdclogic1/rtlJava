@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Code Specifications</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .section { margin-bottom: 20px; }
+        .header { font-size: 18px; font-weight: bold; }
+        .subheader { font-size: 16px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="header">Overview</div>
+        <p>The game involves at least two players, where players take turns to guess letters in a phrase. Points are awarded for correct guesses based on the current letter value.
+             The game continues until the phrase is solved.</p>
+    </div>
+
+    <div class="section">
+        <div class="header">Variables</div>
+        <ul>
+            <li><strong>game</strong>: Object for game logic.</li>
+            <li><strong>player1, player2</strong>: Objects representing the players.</li>
+            <li><strong>currentPlayer</strong>: Integer tracking the current player (1 or 2).</li>
+            <li><strong>correct</strong>: Boolean flag for last guessed letter's correctness.</li>
+            <li><strong>solved</strong>: Boolean flag for the game's phrase being solved.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="header">Game Flow</div>
+        <ol>
+            <li>Initialization: Setting 'correct' to true and entering the main game loop.</li>
+            <li>Game Loop: Continues until 'solved' is true.</li>
+            <li>Guess Handling: Reading and evaluating player's guess.</li>
+            <li>Point Allocation: Awarding points for correct guesses.</li>
+            <li>Player Switching: Alternating between players based on guesses.</li>
+            <li>End of Game: Displaying final points and concluding the game.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <div class="header">Methods Used</div>
+        <ul>
+            <li><strong>game.setLetterValue()</strong>: Sets the current letter value.</li>
+            <li><strong>game.getSolvedPhrase()</strong>: Returns the current state of the solved phrase.</li>
+            <li><strong>game.getLetterValue()</strong>: Returns the current letter value.</li>
+            <li><strong>game.isSolved()</strong>: Checks if the phrase is solved.</li>
+            <li><strong>game.guessLetter()</strong>: Checks if the guessed letter is in the phrase.</li>
+            <li><strong>player.getName()</strong>: Returns player's name.</li>
+            <li><strong>player.addToPoints()</strong>: Adds points to the player's score.</li>
+            <li><strong>player.getPoints()</strong>: Returns the player's current points.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="header">Additional Considerations</div>
+        <p>Includes aspects like error handling, input validation, initial player determination, and endgame logic, which are not detailed in the provided snippet.</p>
+    </div>
+</body>
+</html>

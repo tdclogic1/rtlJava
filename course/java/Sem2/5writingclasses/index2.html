@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Code Specifications</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Specifications</h1>
+        <section>
+            <h2>Overview</h2>
+            <p>The game involves at least two players.</p>
+            <p>Players take turns to guess letters in a phrase.</p>
+            <p>Points are awarded for correct guesses based on the current letter value.</p>
+            <p>The game continues until the phrase is solved.</p>
+        </section>
+        <section>
+            <h2>Variables</h2>
+            <ul>
+                <li><strong>correct</strong>: A boolean flag indicating if the last guessed letter was correct.</li>
+                <li><strong>solved</strong>: A boolean flag indicating if the game's phrase has been solved.</li>
+                <li><strong>currentPlayer</strong>: An integer tracking the current player (1 or 2).</li>
+                <li><strong>game</strong>: An object representing the game, with methods to handle game logic.</li>
+                <li><strong>player1, player2</strong>: Objects representing the players.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Game Flow</h2>
+            <h3>Initialization:</h3>
+            <p>correct is initially set to true.</p>
+            <p>Game enters a loop that continues until solved is true.</p>
+            <h3>Game Loop:</h3>
+            <p>Inside the loop, a nested loop runs as long as correct is true.</p>
+            <p>The game updates and displays the letter value.</p>
+            <p>The current player is prompted to make a guess.</p>
+            <h3>Guess Handling:</h3>
+            <p>The player's guess is read from input (sc.nextLine()).</p>
+            <p>The game checks if the guess solves the phrase (game.isSolved(guess)).</p>
+            <p>The game checks if the guessed letter is correct (game.guessLetter(guess)).</p>
+            <h3>Point Allocation:</h3>
+            <p>If the guess is correct and the phrase is not yet solved, points are added to the current player's score.</p>
+            <h3>Player Switching:</h3>
+            <p>If a guess is incorrect (correct is false), control switches to the other player.</p>
+            <h3>End of Game:</h3>
+            <p>Once the phrase is solved (solved is true), the loop ends.</p>
+            <p>The game displays the final points for both players.</p>
+        </section>
+        <section>
+            <h2>Methods Used</h2>
+            <ul>
+                <li><strong>game.setLetterValue()</strong>: Sets the current letter value.</li>
+                <li><strong>game.getSolvedPhrase()</strong>: Returns the current state of the solved phrase.</li>
+                <li><strong>game.getLetterValue()</strong>: Returns the current letter value.</li>
+                <li><strong>game.isSolved(String guess)</strong>: Checks if the phrase is solved with the current guess.</li>
+                <li><strong>game.guessLetter(String guess)</strong>: Checks if the guessed letter is in the phrase.</li>
+                <li><strong>player.getName()</strong>: Returns the player's name.</li>
+                <li><strong>player.addToPoints(int points)</strong>: Adds points to the player's score.</li>
+                <li><strong>player.getPoints()</strong>: Returns the player's current points.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Additional Considerations</h2>
+            <p>Error handling and input validation are not visible in this snippet.</p>
+            <p>The mechanism for determining the initial currentPlayer is not shown.</p>
+            <p>The endgame logic (determining the winner or displaying final messages) is indicated but not implemented in the provided code.</p>
+            <p>This specification outlines the expected behavior based on the given code. Any additional functionality or game rules not present in the code snippet would need to be defined separately.</p>
+            </section>
+        </div>
+    </body>
+    </html>
