@@ -1,0 +1,11 @@
+{
+    "title": "Java Programming Fundamentals",
+    "date": "2024-02-10",
+    "content": "This section lays the foundation of programming in Java, covering syntax, basic data types, control structures like loops and conditional statements, and basic algorithm development. Understanding these fundamentals is crucial for solving more complex problems in computer science.",
+    "sample": {
+      "description": "A simple Java program to calculate the sum of numbers 1 through 10 using a for loop.",
+      "language": "java",
+      "code": "public class SumExample {\n    public static void main(String[] args) {\n        int sum = 0;\n        for (int i = 1; i <= 10; i++) {\n            sum += i;\n        }\n        System.out.println(\"Sum: \" + sum);\n    }\n}"
+    }
+  }
+  
