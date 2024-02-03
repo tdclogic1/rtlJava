@@ -1,0 +1,18 @@
+Basic Java Syntax
+Summary: The cornerstone of learning Java, or any programming language, involves understanding its syntax and foundational concepts. Basic Java syntax covers the structure of a Java program, the definition of variables, and how data is stored and manipulated using different data types. Variables in Java are strongly typed, meaning each variable is declared with a data type which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable. The syntax also encompasses operators for performing arithmetic, logical, and comparison operations, and control flow constructs that dictate the execution order of statements within a program.
+
+Example:
+java
+Copy code
+public class BasicSyntax {
+    public static void main(String[] args) {
+        int number = 10; // integer variable
+        double rate = 2.5; // floating-point variable
+        char letter = 'A'; // character variable
+        boolean flag = true; // boolean variable
+        System.out.println("Number: " + number);
+        System.out.println("Rate: " + rate);
+        System.out.println("Letter: " + letter);
+        System.out.println("Flag: " + flag);
+    }
+}

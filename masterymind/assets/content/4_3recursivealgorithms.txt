@@ -1,0 +1,31 @@
+Recursive Algorithms
+Summary: Recursion is a powerful concept in computer science, where a method calls itself to solve a problem. A recursive algorithm divides a problem into smaller instances of the same problem, eventually reaching a base case which is simple enough to solve directly. Recursion is particularly useful for tasks that can naturally be broken down in this manner, such as factorial computation, Fibonacci sequence generation, and tree traversals. Understanding recursion requires a solid grasp of the call stack and execution flow, as improper implementation can lead to infinite loops or excessive resource consumption.
+
+Recursive Algorithms
+Factorial Example: A classic example of recursion, computing the factorial of a number.
+
+java
+Copy code
+public class Factorial {
+    public static int factorial(int n) {
+        if (n <= 1) {
+            return 1; // Base case
+        } else {
+            return n * factorial(n - 1); // Recursive call
+        }
+    }
+}
+
+Fibonacci Sequence Example: Another common example demonstrating recursion by calculating the Fibonacci number at a certain position.
+
+java
+Copy code
+public class Fibonacci {
+    public static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2); // Recursive calls
+        }
+    }
+}

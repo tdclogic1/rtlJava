@@ -1,0 +1,20 @@
+Conditional Structures
+Summary: Conditional structures are fundamental to programming, allowing a program to make decisions and execute different code paths based on certain conditions. In Java, this decision-making capability is primarily achieved through if-else statements and switch cases. The if-else statement evaluates a boolean expression and directs the program flow accordingly. For more complex decision trees, else if can be used to chain multiple conditions. Meanwhile, switch statements provide a more readable way to select among multiple alternatives based on the value of a variable or expression. Understanding these structures is essential for creating dynamic and responsive programs that can handle various inputs and situations effectively.
+
+Example:
+java
+Copy code
+public class Conditionals {
+    public static void main(String[] args) {
+        int score = 75;
+        if (score >= 90) {
+            System.out.println("Grade A");
+        } else if (score >= 80) {
+            System.out.println("Grade B");
+        } else if (score >= 70) {
+            System.out.println("Grade C");
+        } else {
+            System.out.println("Grade F");
+        }
+    }
+}

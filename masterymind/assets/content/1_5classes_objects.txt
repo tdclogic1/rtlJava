@@ -1,0 +1,21 @@
+Classes and Objects
+Summary: Object-oriented programming (OOP) is a fundamental concept in Java, centered around classes and objects. A class is a blueprint from which individual objects are created, encapsulating data for the object in attributes and behaviors in methods. This encapsulation principle enhances security and data integrity. Objects are instances of classes, embodying the defined properties and capabilities. Through the use of classes and objects, Java programs can be designed in a modular, reusable, and organized manner. This abstraction allows programmers to create more complex, scalable, and maintainable code structures.
+
+Example:
+java
+Copy code
+public class Person {
+    String name;
+    int age;
+    
+    void speak() {
+        System.out.println("My name is " + name + " and I am " + age + " years old.");
+    }
+    
+    public static void main(String[] args) {
+        Person person1 = new Person();
+        person1.name = "John";
+        person1.age = 30;
+        person1.speak();
+    }
+}

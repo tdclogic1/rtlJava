@@ -1,0 +1,13 @@
+Summary: Iteration constructs, including for, while, and do-while loops, are pivotal in programming, allowing repetitive execution of a block of code as long as a specified condition remains true. The for loop is particularly useful for iterating a set number of times, as it encapsulates the initialization, condition, and increment/decrement in a single line, making it ideal for traversing arrays or collections. The while loop is more flexible, executing its block as long as its condition evaluates to true, which is evaluated before entering the loop. The do-while loop is similar but guarantees the loop’s body is executed at least once since the condition is checked after the loop's execution. Mastery of these loops enables efficient data processing, manipulation, and more.
+
+Example:
+java
+Copy code
+public class Loops {
+    public static void main(String[] args) {
+        // Using a for loop to print numbers 1 to 5
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+}

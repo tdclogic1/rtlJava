@@ -1,0 +1,14 @@
+Arrays
+Summary: Arrays are one of the simplest yet most powerful data structures in Java, allowing the storage of multiple items of the same type in a single variable. They are fixed in size, meaning the number of elements they can contain is set when the array is created and cannot be changed later. This characteristic makes arrays efficient in terms of memory usage and access speed, as elements can be indexed directly. However, the fixed size also means that managing collections of varying sizes can be cumbersome, requiring the programmer to implement or use additional logic for tasks like adding or removing elements.
+
+Example:
+java
+Copy code
+public class ArrayExample {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+    }
+}

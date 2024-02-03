@@ -1,0 +1,37 @@
+ Algorithms and Problem Solving
+Searching Algorithms
+Summary: Searching algorithms are fundamental to computer science, designed to retrieve information stored within data structures efficiently. Two primary examples taught in AP Java are linear search and binary search. Linear search is the simplest form, sequentially checking each element of an array until the desired value is found or the end is reached. Binary search, on the other hand, is more efficient but requires the array to be sorted; it repeatedly divides the search interval in half, comparing the middle element with the target value to either find the match or eliminate half of the remaining elements from consideration. Understanding these algorithms is critical for solving problems that involve data retrieval.
+
+Searching Algorithms
+Linear Search Example: A simple method to find a specific value within an array by checking each element in turn.
+
+java
+Copy code
+public class LinearSearch {
+    public static int linearSearch(int[] data, int target) {
+        for (int i = 0; i < data.length; i++) {
+            if (data[i] == target) {
+                return i; // Return the index of the target element
+            }
+        }
+        return -1; // Target not found
+    }
+}
+
+public class BinarySearch {
+    public static int binarySearch(int[] data, int target) {
+        int low = 0;
+        int high = data.length - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (data[mid] == target) {
+                return mid; // Target found
+            } else if (data[mid] < target) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return -1; // Target not found
+    }
+}

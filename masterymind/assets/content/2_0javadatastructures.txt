@@ -1,0 +1,18 @@
+Data Structures
+Summary: This section introduces arrays and ArrayLists, providing the tools to organize and manipulate groups of data. It covers how to declare, initialize, access, and iterate over these structures.
+
+Example: A Java example showing how to create and fill an ArrayList with numbers, then print them.
+
+java
+Copy code
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        for (int i = 1; i <= 5; i++) {
+            numbers.add(i);
+        }
+        System.out.println(numbers);
+    }
+}

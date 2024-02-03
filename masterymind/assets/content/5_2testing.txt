@@ -1,0 +1,21 @@
+Testing
+Summary: Testing is a critical phase in software development, ensuring that code behaves as expected under various conditions. In AP Java, students are introduced to writing test cases and using testing frameworks like JUnit. This involves checking that individual units of code (methods or classes) perform correctly across a range of inputs, including edge cases. Effective testing strategies help catch bugs early in the development process, save time and resources, and increase the reliability and maintainability of software.
+Testing
+JUnit Test Example: A simple JUnit test for a method that adds two numbers.
+java
+Copy code
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class CalculatorTests {
+    @Test
+    public void testAddition() {
+        assertEquals(4, Calculator.add(2, 2));
+    }
+}
+
+class Calculator {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+}

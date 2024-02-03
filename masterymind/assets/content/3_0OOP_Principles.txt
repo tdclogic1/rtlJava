@@ -1,0 +1,27 @@
+Object-Oriented Programming (OOP) Principles
+Summary: This section delves into the principles of OOP including encapsulation, inheritance, and polymorphism. It emphasizes creating reusable and modular code through classes and objects, critical for larger, scalable applications.
+
+Example: A simple class definition demonstrating encapsulation with private fields and public getters/setters.
+
+java
+Copy code
+public class Student {
+    private String name;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}

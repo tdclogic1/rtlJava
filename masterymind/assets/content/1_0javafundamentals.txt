@@ -1,1 +1,16 @@
- 
+ Programming Fundamentals
+Summary: This section lays the foundation of programming in Java, covering syntax, basic data types, control structures like loops and conditional statements, and basic algorithm development. Understanding these fundamentals is crucial for solving more complex problems in computer science.
+
+Example: A simple Java program to calculate the sum of numbers 1 through 10 using a for loop.
+
+java
+Copy code
+public class SumExample {
+    public static void main(String[] args) {
+        int sum = 0;
+        for (int i = 1; i <= 10; i++) {
+            sum += i;
+        }
+        System.out.println("Sum: " + sum);
+    }
+}

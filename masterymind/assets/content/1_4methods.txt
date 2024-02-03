@@ -1,0 +1,21 @@
+Summary: Methods in Java are blocks of code designed to perform specific tasks, making programs easier to write, read, and debug. They allow for code reuse and modular programming, where complex problems can be broken down into smaller, manageable tasks. Methods can take parameters, allowing for the passing of information into methods, and can return values to the calling code. Overloading methods enable the same method name to support different parameters, enhancing the flexibility and readability of the code. Recursion, a method calling itself with a base condition to stop the recursion, is a powerful concept for solving problems that can be broken down into similar subproblems.
+
+Example:
+java
+Copy code
+public class MethodsExample {
+    // Method to add two integers
+    public static int add(int a, int b) {
+        return a + b;
+    }
+    
+    // Method overloading with three integers
+    public static int add(int a, int b, int c) {
+        return a + b + c;
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(add(5, 10)); // Calls first method
+        System.out.println(add(5, 10, 15)); // Calls overloaded method
+    }
+}

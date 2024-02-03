@@ -1,0 +1,47 @@
+Sorting Algorithms
+Summary: Sorting algorithms organize data into a specified order, facilitating efficient searching, data analysis, and problem-solving. The AP Java course typically introduces selection sort and insertion sort, which are straightforward but less efficient on large datasets. Selection sort finds the smallest (or largest) element and places it at the beginning (or end) of the collection, repeating this process for the remainder of the elements. Insertion sort builds the sorted array one element at a time, inserting each new element into its proper position within the already sorted part. These algorithms lay the groundwork for understanding more complex sorting methods and the concept of algorithm efficiency.
+
+Binary Search Example: A more efficient method that repeatedly divides in half the portion of the list that could contain the item, until finding the target.
+
+
+
+
+Sorting Algorithms
+Selection Sort Example: A sorting algorithm that selects the smallest (or largest) element from an unsorted sublist and swaps it with the first unsorted element.
+
+java
+Copy code
+public class SelectionSort {
+    public static void sort(int[] data) {
+        for (int i = 0; i < data.length - 1; i++) {
+            int minIndex = i;
+            for (int j = i + 1; j < data.length; j++) {
+                if (data[j] < data[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            // Swap the found minimum element with the first element
+            int temp = data[minIndex];
+            data[minIndex] = data[i];
+            data[i] = temp;
+        }
+    }
+}
+
+Insertion Sort Example: A simple sorting algorithm that builds the final sorted array one item at a time.
+
+java
+Copy code
+public class InsertionSort {
+    public static void sort(int[] data) {
+        for (int i = 1; i < data.length; i++) {
+            int key = data[i];
+            int j = i - 1;
+            while (j >= 0 && data[j] > key) {
+                data[j + 1] = data[j];
+                j = j - 1;
+            }
+            data[j + 1] = key;
+        }
+    }
+}

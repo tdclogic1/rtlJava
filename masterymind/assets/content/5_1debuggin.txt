@@ -1,0 +1,24 @@
+Debugging
+Summary: Debugging is the process of identifying and removing errors or bugs from software. In the AP Java course, students learn various debugging techniques and tools that help find and fix issues in code. Effective debugging involves systematically testing parts of the program to isolate the source of a problem, using breakpoints to examine variable values and program flow, and understanding error messages  and stack traces. Developing strong debugging skills is essential for any programmer, as it improves the ability to write correct and efficient code and enhances problem-solving capabilities.
+
+
+
+Testing
+JUnit Test Example: A simple JUnit test for a method that adds two numbers.
+java
+Copy code
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class CalculatorTests {
+    @Test
+    public void testAddition() {
+        assertEquals(4, Calculator.add(2, 2));
+    }
+}
+
+class Calculator {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+}
