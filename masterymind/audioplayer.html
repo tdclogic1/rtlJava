@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen to Audio Sample</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .audio-player-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+        .audio-player-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .audio-player {
+            width: 100%;
+            max-width: 300px; /* Adjust based on your preference */
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-player-container">
+        <h2>Sample Audio Player</h2>
+        <audio controls class="audio-player">
+            <source src="assets/audio/speech.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Audio Assignments</h2>
+        <div id="audioList" class="list-group">
+            <!-- Audio files links are populated here -->
+        </div>
+    </div>
+    
+    <!-- Audio Player Modal -->
+    <div class="modal fade" id="audioPlayerModal" tabindex="-1" role="dialog" aria-labelledby="audioPlayerModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="audioPlayerModalLabel">Audio Player</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <audio id="audioPlayer" controls>
+              <source src="" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+            <!-- Placeholder for seeking functionality -->
+            <div id="audioControls">
+                <button onclick="seekBackward()">Backward</button>
+                <button onclick="seekForward()">Forward</button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" onclick="showQuestions()">Answer Questions</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        // Fetch and display list of audio files as before
+
+// Function to play selected audio
+function playAudio(fileUrl) {
+    $('#audioPlayer source').attr('src', fileUrl);
+    const audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.load(); // Reload the source
+    $('#audioPlayerModal').modal('show'); // Show the modal
+}
+
+// Seeking functions
+function seekForward() {
+    const audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.currentTime += 10; // Seek 10 seconds forward
+}
+
+function seekBackward() {
+    const audioPlayer = document.getElementById('audioPlayer');
+    audioPlayer.currentTime -= 10; // Seek 10 seconds backward
+}
+
+// Function to display questions
+function showQuestions() {
+    // Example: Hide the player and show questions
+    $('#audioPlayerModal').modal('hide');
+    $('#questionsSection').collapse('show');
+    // Populate and handle questions here
+}
+// Example function to populate questions
+function populateQuestions(assignmentId) {
+    // Fetch questions for the given assignment ID or use a pre-defined list
+    const questions = [
+        // Example question format
+        { id: 1, text: "What is the main theme of the audio?" },
+        // Add more questions
+    ];
+
+    // Clear previous questions
+    const questionsSection = document.getElementById('questionsSection');
+    questionsSection.innerHTML = '<h3>Assignment Questions</h3>';
+
+    // Add questions to the section
+    questions.forEach(question => {
+        const questionElem = document.createElement('div');
+        questionElem.innerHTML = `<p>${question.text}</p><input type="text" id="answer_${question.id}" class="form-control"/>`;
+        questionsSection.appendChild(questionElem);
+    });
+
+    // Optionally, add a submit button to submit responses
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

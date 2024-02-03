@@ -1,0 +1,106 @@
+body {
+    background-color: #f0f2f5;
+}
+header h1, .navbar {
+    color: #ffffff;
+    background-color: #34568B;
+}
+h2 {
+    color: #6A7FDB;
+}
+p, ul li {
+    color: #333333;
+}
+.start-journey-btn {
+    background-color: #4CAF50; /* Green color for the 'Start Your Journey' button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.start-journey-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+img {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #50b3a2;
+    color: white;
+    cursor: pointer;
+    display: block;
+    height:50%;
+    width:50%;
+}
+footer {
+    background-color: #007bff; /* Bootstrap primary blue for footer background */
+    color: #ffffff; /* White text color for footer */
+    padding: 20px 0; /* Add some padding to the footer */
+}
+.card {
+    margin: 20px auto; /* Adds margin around each card for spacing */
+    width: 18rem; /* Set a fixed width for each card */
+}
+.card-img-top {
+    width: 100%;
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area nicely */
+}
+.card-deck {
+    margin: 20px; /* Adds some margin around the card deck for spacing */
+}
+.audio-content {
+    text-align: center;
+    margin-top: 30px;
+}
+.question-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.question {
+    margin-bottom: 15px;
+}
+
+
+.audio-player-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+.audio-player-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.audio-player {
+    width: 100%;
+    max-width: 300px; /* Adjust based on your preference */
+}
+
+
+/* Example of a responsive CSS rule */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    img {
+        width: 100%;
+    }
+}

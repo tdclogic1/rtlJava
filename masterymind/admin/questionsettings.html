@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <!-- Include Bootstrap for responsive styling -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+    <h2>Settings</h2>
+    <!-- Styling Options -->
+    <div class="styling-options mt-3">
+        <h4>Styling</h4>
+        <!-- Theme Selection -->
+        <div class="form-group">
+            <label for="themeSelect">Theme</label>
+            <select class="form-control" id="themeSelect">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <!-- Additional themes can be added here -->
+            </select>
+        </div>
+        <!-- Font Size Adjustment -->
+        <div class="form-group">
+            <label for="fontSizeRange">Font Size</label>
+            <input type="range" class="form-control-range" id="fontSizeRange" min="1" max="3">
+        </div>
+    </div>
+    <!-- List Display Preferences -->
+    <div class="list-display-options mt-3">
+        <h4>List Display</h4>
+        <!-- Sort Order -->
+        <div class="form-group">
+            <label for="sortOrderSelect">Sort Order</label>
+            <select class="form-control" id="sortOrderSelect">
+                <option value="date">Date</option>
+                <option value="popularity">Popularity</option>
+                <option value="status">Completion Status</option>
+            </select>
+        </div>
+        <!-- Other preferences can be added here -->
+    </div>
+    <!-- Results Visibility -->
+    <div class="results-visibility mt-3">
+        <h4>Results Visibility</h4>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="feedbackDisplayCheck">
+            <label class="form-check-label" for="feedbackDisplayCheck">
+                Show Feedback After Each Question
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="scoreDisplayCheck">
+            <label class="form-check-label" for="scoreDisplayCheck">
+                Show Scores Immediately
+            </label>
+        </div>
+    </div>
+    <button class="btn btn-primary mt-3" onclick="saveSettings()">Save Settings</button>
+</div>
+<script src="settings.js"></script>
+</body>
+</html>

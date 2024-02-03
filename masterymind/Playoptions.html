@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Options</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2>Select an Audio File</h2>
+    <div id="audioOptions" class="list-group">
+        <!-- Audio options will be dynamically populated here -->
+    </div>
+    <h3 class="mt-4">Options</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="audioOption" id="showText" value="showText" checked>
+        <label class="form-check-label" for="showText">Show Text (for hearing impaired)</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="audioOption" id="translateSpanish" value="translateSpanish">
+        <label class="form-check-label" for="translateSpanish">Translate to Spanish</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="audioOption" id="translateBurmese" value="translateBurmese">
+        <label class="form-check-label" for="translateBurmese">Translate to Burmese</label>
+    </div>
+    <button id="submitOption" class="btn btn-primary mt-3">Submit</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

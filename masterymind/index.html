@@ -1,34 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Real-Time Learning: Business Planning Program</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasteryMind: AI-Empowered Learning Platform</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('/assets/img/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .container, footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .start-journey-btn {
+            background-color: #28a745;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .start-journey-btn:hover {
+            background-color: #218838;
+        }
+        .section-heading {
+            color: #17a2b8;
+        }
+        footer {
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container my-5">
-        <header class="text-center mb-4">
-            <h1>Welcome to the Computer Science Program</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">MasteryMind</a>
+        </div>
+    </nav>
+
+    <div class="container text-center p-5">
+        <header>
+            <h1>Welcome to MasteryMind</h1>
+            <p>An AI-Empowered Learning Platform for Business Training, Personal Growth, and Education.</p>
         </header>
-        <section class="program-summary bg-light p-4 rounded">
-            <h2 class="text-center">Transform Your Programming Ideas into Reality</h2>
-            <p>This program is designed to walk you through various areas within Computer Science, helping you create solid, actionable materials for your programs. Whether you're starting out or looking to refine your existing programs, our comprehensive approach ensures you're prepared for success.</p>
-        </section>
-        <div class="text-center my-4">
-            <button class="btn btn-primary me-2" id="startjava"></button>
-            <button class="btn btn-primary me-2" id="startC">Start C Program</button>
-            <button class="btn btn-primary me-2" id="startpython">Start Python Program</button>
-            <button class="btn btn-primary me-2" id="startaifund">Start AI Fundamentals Program</button>
-            <button class="btn btn-secondary" id="requestInfo">Request More Information</button>
-        </div>
-        <div>
-            
 
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/img/business_training.jpg" class="card-img-top" alt="Business Training">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Training</h5>
+                        <p class="card-text">Empower your workforce with the latest in professional development.</p>
+                        <a href="employee_training_use_case.html" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/img/personal_growth.jpg" class="card-img-top" alt="Personal Growth">
+                    <div class="card-body">
+                        <h5 class="card-title">Personal Growth</h5>
+                        <p class="card-text">Enhance your skills and grow personally with targeted learning paths.</p>
+                        <a href="#" class="btn btn-primary">Discover</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/assets/img/education.jpg" class="card-img-top" alt="Education">
+                    <div class="card-body">
+                        <h5 class="card-title">Education</h5>
+                        <p class="card-text">Access a world of knowledge and advance your academic pursuits.</p>
+                        <a href="education_use_case.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <footer>
+            &copy; 2024 Real-Time Learning. Empowering Minds Everywhere.
+        </footer>
     </div>
-    <img src="assets/img/sybots_dark.png" alt="Logo" style="width:200px;height:200px;align-items: center;">
 
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

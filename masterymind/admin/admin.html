@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Summaries</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<script>
+    document.getElementById('topicForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const topics = document.getElementById('topicList').value.split('\n').filter(Boolean);
+    generateSummaries(topics);
+});
+
+function generateSummaries(topics) {
+    // Example: Posting topics to a backend endpoint that handles AI summary generation
+    fetch('https://your-backend-endpoint.com/generate', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({topics: topics}),
+    })
+    .then(response => response.json())
+    .then(data => {
+        displaySummaries(data.summaries);
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+function displaySummaries(summaries) {
+    const resultsContainer = document.getElementById('summaryResults');
+    resultsContainer.innerHTML = ''; // Clear previous results
+    summaries.forEach((summary, index) => {
+        const element = document.createElement('div');
+        element.className = 'summary';
+        element.innerHTML = `<h5>Topic ${index + 1} Summary:</h5><p>${summary}</p>`;
+        resultsContainer.appendChild(element);
+    });
+}
+
+</script>
+<body>
+<div class="container mt-5">
+    <h2>AI Summary Generation</h2>
+    <form id="topicForm">
+        <div class="form-group">
+            <label for="topicList">Enter Topics</label>
+            <textarea class="form-control" id="topicList" rows="5" placeholder="Enter each topic on a new line"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Generate Summaries</button>
+    </form>
+    <div id="summaryResults" class="mt-4">
+        <!-- Summaries will be displayed here -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
