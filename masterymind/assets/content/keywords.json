@@ -1,0 +1,53 @@
+{
+    "terms": [
+      {
+        "term": "Array",
+        "definition": "A container object that holds a fixed number of values of a single type. The length is established when created and cannot be changed."
+      },
+      {
+        "term": "Iterate",
+        "definition": "The process of looping through elements in a data structure to perform operations on each element."
+      },
+      {
+        "term": "Even Number",
+        "definition": "An integer that is exactly divisible by 2, such as 2, 4, and 6."
+      },
+      {
+        "term": "Running Sum",
+        "definition": "A cumulative total maintained through successive additions, especially in a loop."
+      },
+      {
+        "term": "Loops",
+        "definition": "Structures used to repeat a block of code multiple times. Common loops include `for`, `while`, and `do-while` loops."
+      },
+      {
+        "term": "Conditional Statements",
+        "definition": "Code constructs that execute actions based on whether a condition is `true` or `false`. Includes `if`, `if-else`, and `switch` statements."
+      },
+      {
+        "term": "Variable Declarations",
+        "definition": "Statements that reserve storage space for a variable, declaring its type and name, and optionally initializing it with a value."
+      },
+      {
+        "term": "Loop Structures",
+        "definition": "The syntax and organization of loops, including the initialization, condition, and increment/decrement expressions."
+      },
+      {
+        "term": "Conditionals",
+        "definition": "Expressions evaluated to produce a boolean outcome (`true` or `false`), determining execution flow."
+      },
+      {
+        "term": "Test Cases",
+        "definition": "Specific scenarios used to test if a program behaves as expected, validating correctness and efficiency."
+      },
+      {
+        "term": "Optimizations",
+        "definition": "Changes made to improve a program's efficiency, such as reducing runtime or memory usage, without altering output or behavior."
+      },
+      {
+        "term": "Edge Cases",
+        "definition": "Conditions or inputs at the extreme ends of what a program is expected to handle, used in testing to ensure correct behavior under all circumstances."
+      }
+    ]
+  }
+  
