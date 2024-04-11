@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentIndex = 0;
 
+
     const displayJSON = async (index) => {
         try {
             const response = await fetch(jsonFiles[index]);
@@ -19,12 +20,43 @@ document.addEventListener("DOMContentLoaded", () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
-            jsonDisplay.textContent = JSON.stringify(data, null, 2);
+    
+            // Start with an empty string
+            let displayContent = '';
+    
+            // Check if the title exists and append it
+            if (data.title) {
+                displayContent += `<h2>${data.title}</h2>`;
+            }
+                    // Append description if it exists
+            if (data.description) {
+                displayContent += `<p>${data.description}</p>`;
+                jsonDisplay.style.display = "block";
+            } else {
+                jsonDisplay.style.display = "none";
+            }
+    
+            // Format the codeSample if it exists
+            if (data.codeSample) {
+                // Escaping HTML special characters
+                let formattedCodeSample = data.codeSample
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/\n/g, "<br>")
+                    .replace(/ /g, "&nbsp;");
+    
+                displayContent += `<div style="white-space: pre-wrap;"><code>${formattedCodeSample}</code></div>`;
+            }
+    
+            // Set the formatted content to display in the webpage
+            jsonDisplay.innerHTML = displayContent;
         } catch (error) {
             console.error("Failed to fetch JSON: ", error);
-            jsonDisplay.textContent = "Failed to load data";
+            jsonDisplay.innerHTML = "Failed to load data";
         }
     };
+    
 
     prevBtn.addEventListener("click", () => {
         if (currentIndex > 0) {
