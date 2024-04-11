@@ -1,0 +1,6 @@
+{
+  "section": "1.2",
+  "title": "Data Types - Code Sample",
+  "code_language": "Java",
+  "code_sample": "public class DataTypesExample {\n    public static void main(String[] args) {\n        // Integer type\n        int age = 30;\n        // Double type for decimal values\n        double price = 19.99;\n        // Boolean type for true/false\n        boolean isJavaFun = true;\n        // Character type for single characters\n        char grade = 'A';\n\n        System.out.println(\"Age: \" + age);\n        System.out.println(\"Price: \" + price);\n        System.out.println(\"Is Java fun? \" + isJavaFun);\n        System.out.println(\"Grade: \" + grade);\n    }\n}"
+}

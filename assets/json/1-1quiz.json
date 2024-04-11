@@ -1,0 +1,55 @@
+{
+  "section": "1.1 Variables",
+  "quiz": [
+    {
+      "question": "What is a variable in programming?",
+      "options": [
+        "A type of Java method",
+        "A storage location paired with a name that contains a value",
+        "A specific command in Java to execute a task",
+        "A library in Java for mathematical operations"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "Which of the following is a valid variable declaration in Java?",
+      "options": [
+        "int 1number;",
+        "double java;",
+        "String *name;",
+        "boolean isJavaFun;"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "How do you initialize a variable in Java?",
+      "options": [
+        "By declaring its type only",
+        "By specifying its name only",
+        "By assigning a value using the assignment operator",
+        "By calling a Java method"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "Which data type would you use for a variable that stores whole numbers?",
+      "options": [
+        "String",
+        "int",
+        "boolean",
+        "double"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What does it mean to declare a variable?",
+      "options": [
+        "To change the value of the variable",
+        "To use the variable in calculations",
+        "To specify the type and name of the variable",
+        "To print the variable to the console"
+      ],
+      "answer": "C"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "section": "1.2",
+  "title": "Data Types",
+  "description": "This section covers the various data types available in Java, such as int for integers, double for decimal numbers, boolean for true/false values, and char for single characters. Understanding data types is fundamental in programming as they define the kind of data a variable can hold and how the computer interprets that data. We'll explore each data type, their size, and the range of values they can store. Additionally, we'll discuss the importance of choosing the appropriate data type for a given situation to optimize memory usage and processing speed."
+}

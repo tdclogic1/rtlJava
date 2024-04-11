@@ -1,0 +1,55 @@
+{
+    "title": "Recursion Quiz",
+    "questions": [
+      {
+        "question": "What is recursion in computer programming?",
+        "options": [
+          "A technique where a function calls itself.",
+          "A loop that executes a set number of times.",
+          "A method for storing data in a linear structure.",
+          "A process of creating multiple threads."
+        ],
+        "answer": "A technique where a function calls itself."
+      },
+      {
+        "question": "Which of the following is a necessary component of a recursive function?",
+        "options": [
+          "Multiple base cases",
+          "Recursive case only",
+          "Base case",
+          "Iteration"
+        ],
+        "answer": "Base case"
+      },
+      {
+        "question": "What problem is commonly solved using recursion?",
+        "options": [
+          "Creating graphical user interfaces",
+          "Network packet routing",
+          "Sorting algorithms",
+          "Memory management"
+        ],
+        "answer": "Sorting algorithms"
+      },
+      {
+        "question": "Which of the following best describes a base case in recursion?",
+        "options": [
+          "The condition under which a recursive function ends.",
+          "The maximum number of times a function can call itself.",
+          "The initial parameters passed to a recursive function.",
+          "A specific version of the function for error handling."
+        ],
+        "answer": "The condition under which a recursive function ends."
+      },
+      {
+        "question": "Recursion can be used for which of the following applications?",
+        "options": [
+          "Improving database performance",
+          "Designing network protocols",
+          "Solving puzzles like Tower of Hanoi",
+          "Enhancing the speed of the CPU"
+        ],
+        "answer": "Solving puzzles like Tower of Hanoi"
+    }
+  ]
+}

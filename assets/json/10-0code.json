@@ -1,0 +1,5 @@
+{
+  "title": "Recursion - Factorial Example",
+  "language": "Java",
+  "code": "public class Factorial {\n    // Method to find factorial of a number using recursion\n    public static int factorial(int n) {\n        if (n == 0) { // Base case\n            return 1;\n        } else { // Recursive case\n            return n * factorial(n - 1);\n        }\n    }\n\n    public static void main(String[] args) {\n        int number = 5;\n        System.out.println(\"Factorial of \" + number + \" is: \" + factorial(number));\n    }\n}"
+}

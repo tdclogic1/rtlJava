@@ -1,0 +1,31 @@
+{
+  "section": "1.2",
+  "title": "Data Types - Quiz",
+  "quiz": [
+    {
+      "question": "Which data type would you use to store a person's age?",
+      "options": ["int", "double", "boolean", "char"],
+      "answer": "int"
+    },
+    {
+      "question": "Which data type would be most appropriate for storing a book's price?",
+      "options": ["int", "double", "boolean", "char"],
+      "answer": "double"
+    },
+    {
+      "question": "What is the data type used to store true or false values?",
+      "options": ["int", "double", "boolean", "char"],
+      "answer": "boolean"
+    },
+    {
+      "question": "Which data type is used to store a single character, like 'A'?",
+      "options": ["int", "double", "boolean", "char"],
+      "answer": "char"
+    },
+    {
+      "question": "If you needed to store a large number, like the population of a country, which data type might you consider using?",
+      "options": ["int", "long", "double", "float"],
+      "answer": "long"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON File Viewer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        pre {
+            background-color: #f6f8fa;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow: auto;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JSON File Viewer</h1>
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+    <pre><code id="jsonDisplay"></code></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>

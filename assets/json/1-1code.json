@@ -1,0 +1,7 @@
+{
+  "section": "1.1 Variables",
+  "code_sample": {
+    "description": "Java code demonstrating the declaration, initialization, and usage of variables.",
+    "code": "public class Main {\n  public static void main(String[] args) {\n    // Declaring a variable\n    int age;\n    // Initializing a variable\n    age = 30;\n    // Declaring and initializing another variable\n    String name = \"John Doe\";\n    \n    // Using variables\n    System.out.println(name + \" is \" + age + \" years old.\");\n  }\n}"
+  }
+}

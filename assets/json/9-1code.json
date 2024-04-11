@@ -1,0 +1,4 @@
+{
+  "title": "9.1 Class Hierarchies",
+  "codeSample": "class Animal {\n  void eat() {\n    System.out.println(\"This animal eats food.\");\n  }\n}\n\nclass Dog extends Animal {\n  @Override\n  void eat() {\n    System.out.println(\"Dog eats kibble.\");\n  }\n}\n\npublic class TestInheritance {\n  public static void main(String[] args) {\n    Animal myAnimal = new Animal();\n    myAnimal.eat();\n    Dog myDog = new Dog();\n    myDog.eat();\n  }\n}"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Chapter 9: Inheritance",
+  "description": "Inheritance is a cornerstone concept of object-oriented programming (OOP) that allows for a more efficient and manageable way of organizing code. In Java, inheritance enables one class (the subclass or child class) to inherit the fields and methods of another class (the superclass or parent class). This chapter covers the fundamentals of inheritance, illustrating how it promotes code reuse and establishes a hierarchical relationship between classes. Key topics include the use of the 'extends' keyword to establish inheritance relationships, method overriding to provide specific implementations in a subclass, the use of 'super' to invoke superclass constructors and methods, and the distinction between 'is-a' and 'has-a' relationships. The concept of polymorphism, which allows a subclass to be treated as an instance of a superclass, is also explored, along with abstract classes and interfaces, which define a template for other classes. Through examples, discussions, and practical exercises, students will learn how to effectively use inheritance to create flexible and reusable code structures."
+}
+

@@ -1,0 +1,4 @@
+{
+  "title": "1.3 Arithmetic Expressions",
+  "codeSample": "public class ArithmeticExample {\n  public static void main(String[] args) {\n    int sum = 5 + 3; // Addition\n    int difference = 5 - 3; // Subtraction\n    int product = 5 * 3; // Multiplication\n    double quotient = 5 / 3.0; // Division\n    int remainder = 5 % 3; // Modulus\n\n    System.out.println(\"Sum: \" + sum);\n    System.out.println(\"Difference: \" + difference);\n    System.out.println(\"Product: \" + product);\n    System.out.println(\"Quotient: \" + quotient);\n    System.out.println(\"Remainder: \" + remainder);\n  }\n}"
+}

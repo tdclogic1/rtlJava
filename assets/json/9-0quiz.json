@@ -1,0 +1,55 @@
+{
+  "title": "Chapter 9: Inheritance Quiz",
+  "questions": [
+    {
+      "question": "What is the purpose of the 'extends' keyword in Java?",
+      "options": [
+        "To create a new class that is a subclass of an existing class.",
+        "To include external libraries in a Java program.",
+        "To declare a variable.",
+        "To declare a method as extended."
+      ],
+      "answer": "To create a new class that is a subclass of an existing class."
+    },
+    {
+      "question": "Which of the following is true about method overriding?",
+      "options": [
+        "It allows a subclass to replace the implementation of a method defined in its superclass.",
+        "It must change the method signature.",
+        "It is used to increase the visibility of a method in a subclass.",
+        "It cannot be done in Java."
+      ],
+      "answer": "It allows a subclass to replace the implementation of a method defined in its superclass."
+    },
+    {
+      "question": "What is polymorphism?",
+      "options": [
+        "Changing the form of a method based on the input parameters.",
+        "The ability of a variable, function or object to take on multiple forms.",
+        "The division of a program into multiple classes.",
+        "The process of using loops."
+      ],
+      "answer": "The ability of a variable, function or object to take on multiple forms."
+    },
+    {
+      "question": "Which of the following statements about abstract classes is TRUE?",
+      "options": [
+        "You can create instances of an abstract class.",
+        "Abstract classes can only contain abstract methods.",
+        "Abstract classes are used to provide a base for subclasses to extend, but cannot be instantiated.",
+        "Abstract classes are fully implemented classes and cannot be extended."
+      ],
+      "answer": "Abstract classes are used to provide a base for subclasses to extend, but cannot be instantiated."
+    },
+    {
+      "question": "What is the 'super' keyword used for?",
+      "options": [
+        "To call a method of the superclass from within an overriding method in a subclass.",
+        "To declare a variable in the superclass.",
+        "To increase the visibility of a superclass method.",
+        "To declare a superclass as superior."
+      ],
+      "answer": "To call a method of the superclass from within an overriding method in a subclass."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "9.1 Class Hierarchies Quiz",
+  "questions": [
+    {
+      "question": "What keyword is used in Java to inherit from a superclass?",
+      "options": ["super", "extends", "implements", "inherit"],
+      "answer": "extends"
+    },
+    {
+      "question": "Which of the following is true about class hierarchies in Java?",
+      "options": [
+        "A class can extend multiple classes.",
+        "A class can implement multiple interfaces.",
+        "Interfaces can contain concrete methods only.",
+        "All classes are final by default."
+      ],
+      "answer": "A class can implement multiple interfaces."
+    },
+    {
+      "question": "What is method overriding in Java?",
+      "options": [
+        "Changing the method signature in the subclass.",
+        "Providing a specific implementation of a superclass method in the subclass.",
+        "Renaming a method in the subclass.",
+        "None of the above."
+      ],
+      "answer": "Providing a specific implementation of a superclass method in the subclass."
+    },
+    {
+      "question": "In a class hierarchy, what is the 'is-a' relationship?",
+      "options": [
+        "It denotes that an object of a subclass can be treated as an object of any of its superclasses.",
+        "It indicates that a class is composed of other classes.",
+        "It signifies that all subclasses must have the same methods as the superclass.",
+        "None of the above."
+      ],
+      "answer": "It denotes that an object of a subclass can be treated as an object of any of its superclasses."
+    },
+    {
+      "question": "What does it mean if a class is declared as 'abstract'?",
+      "options": [
+        "It cannot be instantiated, but can be subclassed.",
+        "It can contain both abstract and non-abstract methods.",
+        "It is a contract for subclasses to provide implementations for abstract methods.",
+        "All of the above."
+      ],
+      "answer": "All of the above."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+json_content = {
+    "1": {
+        "title": "Primitive Types",
+        "content": {
+            "1.1": "Variables",
+            "1.2": "Data Types",
+            "1.3": "Arithmetic Expressions",
+            "1.4": "Casting"
+        }
+    },
+    "2": {
+        "title": "Using Objects",
+        "content": {
+            "2.1": "Object Creation and Method Calls",
+            "2.2": "Java Library Classes (e.g., Math, String)",
+            "2.3": "Import Statements",
+            "2.4": "Random Number Generation"
+        }
+    },
+    "3": {
+        "title": "Boolean Expressions and if Statements",
+        "content": {
+            "3.1": "Relational Operators",
+            "3.2": "Logical Operators",
+            "3.3": "Conditional Statements",
+            "3.4": "Comparing Objects"
+        }
+    },
+    "4": {
+        "title": "Iteration",
+        "content": {
+            "4.1": "While Loops",
+            "4.2": "For Loops",
+            "4.3": "Nested Loops",
+            "4.4": "Iterating over Collections/Arrays"
+        }
+    },
+    "5": {
+        "title": "Writing Classes",
+        "content": {
+            "5.1": "Class Design",
+            "5.2": "Field and Method Declarations",
+            "5.3": "Constructors",
+            "5.4": "Encapsulation and Immutable Classes"
+        }
+    },
+    "6": {
+        "title": "Array",
+        "content": {
+            "6.1": "Array Creation and Access",
+            "6.2": "Traversing Arrays",
+            "6.3": "Array Algorithms (e.g., searching, sorting)",
+            "6.4": "Multidimensional Arrays"
+        }
+    },
+    "7": {
+        "title": "ArrayList",
+        "content": {
+            "7.1": "ArrayList Creation and Access",
+            "7.2": "Traversing ArrayLists",
+            "7.3": "Modifying ArrayLists",
+            "7.4": "Comparing Arrays and ArrayLists"
+        }
+    },
+    "8": {
+        "title": "2D Array",
+        "content": {
+            "8.1": "Creation and Access",
+            "8.2": "Traversing 2D Arrays",
+            "8.3": "Case Studies and Examples"
+        }
+    },
+    "9": {
+        "title": "Inheritance",
+        "content": {
+            "9.1": "Class Hierarchies",
+            "9.2": "Superclasses and Subclasses",
+            "9.3": "Method Overriding",
+            "9.4": "Polymorphism"
+        }
+    },
+    "10": {
+        "title": "Recursion",
+        "content": {
+            "10.1": "Recursive Methods",
+            "10.2": "Base and Recursive Cases",
+            "10.3": "Recursion in Sorting and Searching Algorithms",
+            "10.4": "Practical Applications of Recursion"
+        }
+    }
+}

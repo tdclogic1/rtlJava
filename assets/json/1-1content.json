@@ -1,0 +1,4 @@
+{
+  "section": "1.1 Variables",
+  "content_description": "In programming, a variable is a storage location paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value. The variable name is the way we refer to this stored value, which can be read or changed as the program runs. In Java, variables are defined by specifying the type of data they can hold (such as int for integers, double for floating-point numbers, or String for text) followed by a unique name. Variables must be declared before they are used, and they can also be initialized to hold a specific value. Understanding variables is fundamental to mastering Java and programming in general, as they are the basic unit of storage in a program."
+}
